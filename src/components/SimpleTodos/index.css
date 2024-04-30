@@ -1,0 +1,107 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://res.cloudinary.com/daztltrkk/image/upload/v1714388517/sptntk4ioje8midtbdg9.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+.innerDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  /* background-image: url("https://res.cloudinary.com/daztltrkk/image/upload/v1714391331/bg_chat_1_aq4pyw.png");
+  background-size: cover;
+  background-position: center; */
+  width: 72vw;
+  height: 80vh;
+  border-radius: 10px;
+  /* overflow-y: auto; */
+}
+#addBox {
+  border-radius: 6px;
+  border: #0f9d58 solid 2px;
+  outline: none;
+  padding-left: 6px;
+  margin-left: 25px;
+  width: 30vw;
+  /* border: none; */
+}
+.heading {
+  color: #ff1500;
+  margin: 2%;
+  align-self: center;
+}
+input[type="text"] {
+  cursor: pointer;
+  outline: none;
+  align-self: center;
+  width: 25vw;
+  height: 4vh;
+  margin-right: 1%;
+  border-radius: 10px;
+  border-color: black;
+}
+.ullist {
+  list-style-type: none;
+  width: 70vw;
+  padding-left: 3%;
+  padding-right: 3%;
+  height: 55vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: grey white;
+  scrollbar-width: thin;
+}
+
+.btnSuccess {
+  /* border-color: green; */
+  color: black;
+  width: 5vw;
+  height: 4vh;
+  background-color: rgb(163, 252, 163);
+}
+.addTodo {
+  padding-left: 3%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70vw;
+  margin-bottom: 2%;
+}
+
+@media (max-width: 1000px) {
+  .btnSuccess {
+    width: 10vw;
+  }
+  .innerDiv {
+    width: 90vw;
+    overflow-x: hidden;
+  }
+  .addTodo {
+    width: 100vw;
+  }
+  #addBox {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+  }
+  .addButton {
+    margin-left: 5px;
+  }
+  .ullist {
+    width: 85vw;
+    /* overflow: auto; */
+  }
+}

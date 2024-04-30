@@ -1,0 +1,98 @@
+/* Write your CSS here */
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.mainDivs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: x-large;
+  box-sizing: border-box;
+  width: 65vw;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.3);
+}
+
+p {
+  background-color: rgb(205, 231, 254);
+  border-left: blue solid 5px;
+  /* background-image: linear-gradient(to right, rgb(205, 231, 254), #ffffff); */
+  border-radius: 5px;
+  /* height: 30px; */
+  min-height: 30px;
+  max-height: max-content;
+  padding-left: 5px;
+  overflow-y: auto;
+}
+#editBox {
+  width: 50vw;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  border-left: rgb(0, 143, 95) solid 5px;
+  margin-left: 10px;
+  padding-left: 5px;
+  background-color: rgb(51, 250, 183);
+}
+
+.todoPara {
+  width: 50vw;
+  font-size: medium;
+}
+
+.btn {
+  width: 5vw;
+  height: 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #000000;
+  background-color: #fcc328;
+  border-radius: 6px;
+}
+
+.btnDiv {
+  display: flex;
+  width: 12vw;
+  justify-content: space-between;
+}
+
+.ParaStrike {
+  text-decoration: line-through;
+  border-left: #0f9d58 solid 5px;
+  background-color: rgb(163, 252, 163);
+  /* background-image: linear-gradient(to right, rgb(163, 252, 163), #ffffff); */
+}
+
+@media (max-width: 1000px) {
+  .mainDivs {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 85vw;
+  }
+  .btnDiv {
+    margin-top: 5px;
+    width: 25vw;
+  }
+  .btn {
+    width: 10vw;
+  }
+  .todoPara,
+  #editBox {
+    margin-left: 5px;
+    width: 75vw;
+  }
+  input[type="checkbox"] {
+    display: inline;
+    margin-top: 8px;
+    /* border: #000000 solid 1px; */
+  }
+}
